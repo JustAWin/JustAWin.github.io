@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hello, it's Justin.</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/contact">Contact</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, my name is Justin!</h1>
-				<p>I am an undergraduate student at UT Austin. <a href="/about">Read more about me here</a>.</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><small><pre><b>version 1.0.0</b></pre></small></li>
-        		<li><small><pre><em>Created on [insert date here]</em></pre></small></li>
-			</ul>
-		</footer>
-	</body>
+  <head>
+    <title>{{ page.title }}</title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  
+  </head>
+
+
+  <body>
+    <nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/cv">CV</a></li>
+<li><a href="/blog">Blog</a></li>
+</ul>
+    </nav>
+<div class="container">
+
+  {{ content }}
+
+</div>
+  
+  <footer>
+   <ul>
+   <li><small><pre>version 1.0.0</pre></small></li>
+   <li><small><pre>created on [insert date here] at [insert time here]</li>
+   </ul>
+  </footer>
+  </body>
+
 </html>
